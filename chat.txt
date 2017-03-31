@@ -1,0 +1,243 @@
+Customer Identification: CTrade Asia Crowd Inc. (603503)
+Start Date: Monday 13-Mar-2017 16:00 UTC
+End Date: Monday 13-Mar-2017 19:00 UTC
+Duration: 3 hours
+Event Type: Planned Event
+Subject: Event 36130745 - EMERGENCY MAINTENANCE - bcr01.sng01 - Firmware Upgrade
+
+=================================================================
+/ Event Description /
+As a result of the outages many of our customers have experienced due to router instability, Network Engineering has been working with the manufacturer and have identified an issue on a backend customer router (BCR), bcr01.sng01, which provides private connectivity for your server(s). In order to prevent an unplanned outage resulting in significant downtime, Engineers will be upgrading the firmware during an EMERGENCY maintenance window at the time referenced above.
+
+During this maintenance, customer servers will not be reachable on the private network. Public connectivity will not be effected by this maintenance.
+
+Private network services including the following (but not limited to) will be impacted:
+
+- Server to server connectivity on the private network
+- iSCSI
+- DNS
+- NAS
+- eVault
+- Object Storage
+- PPTP / SSL / IPSEC VPN  connectivity to impacted servers
+- Direct Link connectivity to impacted servers
+
+While the maintenance window is set for 3 hours, we expect no more than 3 minutes of downtime.  Should we encounter an unexpected issue, the disruption could extend to as much as 30 minutes.  However, since we worked with the router's manufacturer on optimizing the maintenance procedure, the downtime should be no more than 3 minutes.
+
+Again, NO downtime is expected on the public network.
+
+If you have any problems after this time frame with regard to connectivity, or if you have any questions regarding the maintenance at any point, please open a ticket in the customer portal referencing this event ID.
+
+We appreciate your patience during this work and welcome any feedback.
+
+Thank you,
+Network Engineering
+
+
+--------------------------------------------------------
+Customer Identification: CTrade Asia Crowd Inc. (603503)
+Start Date: Wednesday 15-Mar-2017 16:00 UTC
+End Date: Wednesday 15-Mar-2017 19:00 UTC
+Duration: 3 hours
+Event Type: Planned Event
+Subject: Event 36965981 - EMERGENCY MAINTENANCE - fcr01.hkg02 - Firmware Upgrade
+
+=================================================================
+/ Event Description /
+As a result of the outages many of our customers have experienced due to router instability, Network Engineering has been working with the manufacturer and have identified an issue on a frontend customer router (FCR), fcr01.hkg02, which provides public connectivity for your server(s). In order to prevent an unplanned outage resulting in significant downtime, Engineers will be upgrading the firmware during an EMERGENCY maintenance window at the time referenced above.
+
+During this maintenance, customer servers will not be reachable on the public network. Private connectivity will not be effected by this maintenance.
+
+While the maintenance window is set for 3 hours, we expect no more than 3 minutes of downtime. Should we encounter an unexpected issue, the disruption could extend to as much as 30 minutes. However, since we worked with the router's manufacturer on optimizing the maintenance procedure, the downtime should be no more than 3 minutes.
+
+Again, NO downtime is expected on the private network.
+
+If you have any problems after this time frame with regard to connectivity, or if you have any questions regarding the maintenance at any point, please open a ticket in the customer portal referencing this event ID.
+
+We appreciate your patience during this work and welcome any feedback.
+
+Thank you,
+Network Engineering
+
+/ Items Associated With This Event /
+Item ID | Hostname | Public IP | Private IP | Item Type
+261486 | dc02.gforex.asia | 119.81.135.130 | 10.110.88.58 | Bare Metal Server
+270696 | server02bk.gforex.asia | 119.81.135.135 | 10.110.88.45 | Bare Metal Server
+
+
+
+
+
+
+MT4 account number:  4934978
+Password: dosukoi1919
+Server: OANDA v20 Live
+
+/ Event Updates /
+
+
+IP: 198.105.26.118
+
+
+
+Nagios user <to.la.giang@miyatsu.vn>
+6:58 PM (3 hours ago)
+
+to me 
+***** centreon Notification *****
+
+Type:PROBLEM
+Host: VNPT
+State: DOWN
+Address: 113.160.58.90
+Info: (Host Check Timed Out)
+Date/Time: 09-02-2017
+
+
+Ductan_v@$3p@2016
+
+  | 01:31:41 | ?ompleted | New chat
+Our company representative will be with you in a moment.
+Kenichi Teranishi | 15:44
+hi
+15:45Support Team has joined the chat.
+Support Team | 15:45
+Hello! How can I help you?
+Kenichi Teranishi | 15:45
+i have some question about switch trade server to backup server
+ model.png (53.2 Kb)
+please have a look our system
+Support Team | 15:46
+ok
+Kenichi Teranishi | 15:46
+our client to connect via DC
+Support Team | 15:46
+ok
+Kenichi Teranishi | 15:47
+at weekedn, i will switch main to backup serrver
+i will do these steps. so please read and let me know if i made anything wrong
+Support Team | 15:48
+ok
+Kenichi Teranishi | 15:48
+1. stop mtsrv service on main server
+2. stop watchdog on backup server
+3. remove datacenter on backup server
+Kenichi Teranishi | 15:49
+4. start mtsrv service on backup server
+5. launch history synchronization on backup server
+Kenichi Teranishi | 15:50
+6. launch liveupdate on backup server
+are these ok?
+Support Team | 15:51
+as i can see you are using watchdog for backup purposes.
+firstly we are you going to move to backup server? is there any problem with the main server?
+please advice
+Kenichi Teranishi | 15:54
+> is there any problem with the main server?
+no
+but we want to make test in case of main failure
+Support Team | 15:56
+The easiest way to do it is the below.
+1. Connect to MT4 Admin on the main server
+2. Execute the command Switch to backup from services 
+3. Connect to MT4 Admin with the ip of your backup server
+4. Activate server
+the same way you can move to your main server later
+Kenichi Teranishi | 15:57
+are you there
+Support Team | 15:57
+yes. i just post my comments
+Kenichi Teranishi | 15:58
+that is all?
+Support Team | 15:58
+you did not get it
+Kenichi Teranishi | 15:58
+i saw it
+1. Connect to MT4 Admin on the main server
+dont i stop mtsrv service?
+Support Team | 15:59
+no need
+it will be stopped automatically on the main server and started on backup
+Kenichi Teranishi | 16:00
+so when i want to restore back to main server that is the same?
+Support Team | 16:00
+yes
+Kenichi Teranishi | 16:01
+how about watchdog?
+i have do nothing with it
+Support Team | 16:02
+it will stopped automatically on the backup machine and started on the main
+Kenichi Teranishi | 16:02
+oh, greate
+by the way, mt4 backup has to assign DC IP on it?
+Support Team | 16:03
+where? can you show me please?
+Kenichi Teranishi | 16:04
+you know, we are configuring that alll of connection from customers to MT4 main are not allowed. just connect to DC.
+when i switch to backup server. will i do anything more ?
+Support Team | 16:06
+on DC did you spesify the ip of your backup server?
+Also in list of MT4 Admin --> DataCenters you have the DC and the backup server with priority idle?
+Kenichi Teranishi | 16:09
+no
+now i only have ip main server
+Support Team | 16:10
+add your backup server and set priority as idle
+Kenichi Teranishi | 16:12
+sorry, now i connect to administrator MT4 admin, i only see IP datacenter
+Support Team | 16:14
+its ok
+add the backup server as well
+priority as idle
+and then send me a screensht
+Kenichi Teranishi | 16:15
+oh, i will do it at weekend
+not now
+but i think i will have to connect to administrato MT4 Backup server and add IP DC on it?
+Support Team | 16:17
+yes
+Kenichi Teranishi | 16:18
+now, you know, main server is running, so i can not connect to mt4 adminstrator on backup server
+Support Team | 16:20
+yes correct
+Why you do not " build " a test server and you make all your tests there?
+Kenichi Teranishi | 16:21
+well, i dont calculate about this
+Kenichi Teranishi | 16:23
+If the main server is not available via the Administrator terminal, you should switch to the backup server manually.
+Make sure that the main server is stopped. Check if MetaTrader Server service status is set to Disabled or the server is disabled physically. Also, switch MetaTrader Server service launch type to Manual.
+Stop MetaTrader 4 WatchDog on the backup server by the Stop dialog command or by stopping the system service.
+If a data center has been installed and launched on the backup server along with the WatchDog service (as an additional access point of the main server), stop it as well.
+Launch the backup server: a trade server service is installed in the system when installing MetaTrader 4 WatchDog. Launch it.
+Start history synchronization (the backup server may not have the history for the last 30 minutes, since WatchDog synchronizes the history only once per 30 minutes).
+Start the platform update manually from the Services menu of the Administrator terminal.
+these on your website
+i like your way, but can you tell me, we miss anything?
+Support Team | 16:26
+we did not miss.
+
+the above procedure is when the main server is not available via the MetaTrader 4 Administrator
+Kenichi Teranishi | 16:28
+After the main server's operability is restored, switch back to it from the backup server. Wait for a break between trading sessions (for example, on Saturday or Sunday) and take the following steps:
+Stop the backup server.
+Move the following files from the backup server to the main one:
+*.exe files
+database files: users.dat, orders.dat and daily.dat
+configuration files: license.lic, access.ini, common.ini, feeders.ini, groups.ini, holidays.ini, managers.ini, plugins.ini, secgroups.ini, securities.ini, servers.ini, sync.ini, time.ini
+plugins and their settings from the 'plugins' directory
+history files from the 'history' folder
+Launch the main server.
+Launch WatchDog on the backup server.
+i dont have to move files backups to main if restore?
+Support Team | 16:31
+no need
+Kenichi Teranishi | 16:33
+so you mean, i only do steps if i cant connect to MT4 main, right?
+Support Team | 16:34
+the above steps is when you main server is totally down and watchdog is not running to it
+Kenichi Teranishi | 16:35
+thank you. i will do this
+thanks
+Support Team | 16:44
+Noted
+You are welcome sir
